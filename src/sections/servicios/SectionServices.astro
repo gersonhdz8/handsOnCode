@@ -1,0 +1,40 @@
+---
+import CardServices from "../../components/CardServices.astro";
+import Imagen1 from "../../../public/img/Service1.webp";
+import Imagen2 from "../../../public/img/Service2.webp";
+import Imagen3 from "../../../public/img/Service3.webp";
+---
+<section id="services"
+		class="flex w-full h-full py-20 gap-8 flex-col justify-center items-center">
+		<h1
+			class="text-negroTitulos font-dosis text-4xl w-max h-max font-bold text-center">
+			Servicios
+		</h1>
+		<div class="grid grid-rows-1 gap-5 md:grid-cols-2 xl:grid-cols-3">
+			<div class="w-full h-max">
+				<CardServices
+					imagen={Imagen1}
+					alt="MicroSite"
+					titulo="Micro-Sitios"
+					descripcion="Creación de micro-sitios y páginas dedicadas para campañas específicas, promociones o eventos, con un diseño único y enfocado en conversiones."
+				/>
+			</div>
+			<div class="w-full h-max">
+				<CardServices
+					imagen={Imagen2}
+					alt="Landing Pages"
+					titulo="Landing Pages"
+					descripcion="Creación de landing pages personalizadas que se alineen con la identidad de marca y los objetivos de marketing de la empresa. Esto incluye diseño gráfico, optimización para conversiones y desarrollo web."
+				/>
+			</div>
+			<div
+				class="w-full h-max grid md:col-span-2 xl:col-span-1 justify-center items-center">
+				<CardServices
+					class="bg-red"
+					imagen={Imagen3}
+					titulo="Static Ecommerces"
+					descripcion="Desarrollo de páginas estáticas para sitios de comercio electrónico, asegurando una experiencia de usuario fluida y rápida. Estas páginas pueden incluir catálogos de productos, páginas de detalles de productos, y páginas de agradecimiento."
+				/>
+			</div>
+		</div>
+	</section>

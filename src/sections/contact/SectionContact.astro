@@ -1,0 +1,48 @@
+---
+import Correo from "../../components/icons/Correo.astro"
+import Contacto from "../../components/icons/Contacto.astro"
+---
+<section id="contact" class="w-full h-full bg-gradient-to-b from-[#2D3135] to-[#22456B] text-gray-300 rounded-3xl" >
+    <div class="w-full flex flex-col h-full justify-center items-center p-8 gap-5 md:flex-row">
+        <div class="flex flex-col w-full h-full justify-center items-center gap-y-3">
+            <h1 class="font-dosis font-bold text-4xl py-3 ">Ponerse en contacto</h1>
+            <p class="font-nunito text-center py-3">Ponte en contacto con nosotros. Estamos abiertos a discutir nuevos proyectos, ideas creativas y oportunidades para ser parte de tus visiones,</p>
+            <div class="flex flex-col w-full h-full gap-3">
+                <div class="inline-flex items-center gap-3">
+                    <Contacto></Contacto>                    
+                    <p>+57 314-241-8161</p>
+                </div>
+                <div class="inline-flex item-center gap-3">
+                    <Correo></Correo>
+                    <p>handsOncode@gmail.com</p>
+                </div>
+            </div>
+        </div>
+        <form class="w-full h-max">
+            <div class="grid md:grid-cols-2 gap-6 mb-6">
+                <div class="grid col-span-2">
+                    <label for="first_name" class="block mb-2 text-sm font-medium font-nunito">Nombre</label>
+                    <input type="text" id="first_name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  " placeholder="Nombre y apellido" required />
+                </div>
+                <div class="">
+                    <label for="email" class="block mb-2 text-sm font-medium font-nunito">Correo Electrónico</label>
+                    <input type="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  " placeholder="handsOncode@company.com" required />
+                </div>          
+                <div>
+                    <label for="phone" class="block mb-2 text-sm font-nunito font-semibold">Número de contacto</label>
+                    
+                    <input type="tel" id="phone" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="+57  123-456-7890" required />
+                </div>
+                <div class="mb-6 grid col-span-2">
+                    <label for="large-input" class="block mb-2 text-sm font-medium font-nunito">Mensaje</label>
+                    <textarea id="large-input" class="block w-full h-44 p-4 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 text-base focus:ring-blue-500 focus:border-blue-500 " placeholder="Mensaje..."></textarea>
+                </div>
+            </div>             
+            <button type="submit" class="text-white bg-azulSecundario hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center ">Enviar</button>
+        </form>
+        
+    </div>
+    <div id="footer" class="w-full h-full border-t-2 mt-8 p-8">
+        <p>© 2024 Hands OnCode - Todos los derechos reservados</p>
+    </div>    
+</section>

@@ -1,0 +1,40 @@
+---
+import Logo from "../../components/icons/Logo.astro"
+import Mision from "../../components/icons/Mision.astro"
+import Vision from "../../components/icons/Vision.astro"
+---
+<section id="about" class="w-full h-max">
+    <div class="w-full h-full flex gap-y-10 py-12 flex-col">
+        <div class="flex flex-col w-full h-full gap-y-5 justify-center items-center">
+            <div class="flex w-full h-full flex-col items-center justify-center">
+                <h1 class="flex text-negroTitulos font-dosis text-4xl font-bold">Acerca de</h1>
+                <div class="inline-flex gap-3 w-full items-center justify-center">
+                    <Logo class="size-10"></Logo>
+                    <p class="font-russo text-azulLogo text-3xl">Hands On<span class="font-russo text-azulPrincipal">Code</span></p>
+                </div>
+            </div> 
+            <div class="flex w-full lg:w-3/4 text-center p-5">                 
+            
+            <p class="font-nunito flex">Nos dedicamos al desarrollo de páginas web estáticas, ofreciendo soluciones eficientes y de alta calidad para satisfacer las necesidades de nuestros clientes. Con un enfoque en la simplicidad, velocidad y seguridad, ayudamos a empresas y particulares a tener una presencia en línea profesional y funcional.</p>
+                
+            
+            </div>           
+            
+        </div>
+        <div class="flex w-full flex-col gap-y-12 md:flex-row gap-x-12 md:px-5">
+            <div class="flex w-full flex-col gap-5 items-center justify-center">
+                <Mision></Mision>
+                <h2 class="font-dosis text-xl font-bold text-negroTitulos">Misión</h2>
+                <p class="flex justify-center text-center lg:w-3/4 ">Nuestra misión es proporcionar servicios de desarrollo web que sean accesibles, rápidos y seguros.</p>
+
+            </div>
+            <div class="flex w-full flex-col gap-5 items-center justify-center">
+                <Vision></Vision>
+                <h2 class="font-dosis text-xl font-bold text-negroTitulos">Visión</h2>
+                <p class="flex justify-center text-center lg:w-3/4">Ofrecer servicios que marquen la diferencia y establezcan nuevos estándares de calidad y eficiencia en el mercado.</p>
+
+            </div>
+        </div>
+    </div>
+
+</section>

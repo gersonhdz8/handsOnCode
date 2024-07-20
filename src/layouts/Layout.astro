@@ -1,0 +1,36 @@
+---
+interface Props {
+	title: string;
+}
+import Background from '../components/imagenes/Background.astro';
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Desarrollo Website Hands On Code" />
+		<meta name="viewport" content="width=device-width"/>
+		<link rel="icon" type="image/svg+xml" href="/logo.svg" />
+		
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+	<body class="bg-[#1E1E1E] relative w-full h-full">
+
+		<Background></Background>		
+		<main class="h-full w-full relative flex justify-center">
+			<section id="sectionContent" class="w-full h-max my-5 mx-auto max-w-[1280px] max-h-3xl justify-center flex flex-col gap-y-20 container-xl">
+				<slot/>	
+			</section>						
+		</main>
+		
+	</body>
+</html>
+
+<style>	
+	@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap');
+</style>
+

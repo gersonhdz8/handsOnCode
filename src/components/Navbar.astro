@@ -1,0 +1,29 @@
+---
+import Logo1 from "./icons/Logo.astro";
+import '@fontsource/russo-one'
+
+---
+<nav class="flex flex-row w-full h-max items-center">
+    <div class="flex w-full h-full justify-around items-center">
+        <div class="inline-flex items-center gap-2 w-max h-full">        
+            <div id="logo" class="w-max h-full relative flex items-center">
+                <Logo1 class="size-10"></Logo1>
+            </div>
+            <p class="font-russo text-2xl text-azulLogo">Hands On<span class="text-azulPrincipal">Code</span></p>
+        </div>
+        <div id="navbar" class="hidden h-full w-max lg:flex items-center gap-16 font-nunito font-semibold text-base">
+            <a href="#home">Inicio</a>
+            <a href="#services">Servicios</a>
+            <a href="#procedimiento">Proceso</a>
+            <a href="#about">Nosotros</a>
+            <a href="#contact">Contacto</a>
+        
+        </div>
+        <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="navbar-default" aria-expanded="false">
+            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+            </svg>
+        </button>
+
+    </div>
+</nav>

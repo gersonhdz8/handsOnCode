@@ -1,0 +1,55 @@
+---
+import Navbar from "../../components/Navbar.astro"
+import ImgHome from "../../../public/img/ImgHome.webp"
+---
+<section id="home" class="w-full h-[768px] bg-fondoHome rounded-2xl bg-cover lg:rounded-[50px] border-white flex justify-center flex-col">
+    <Navbar></Navbar>
+    <div class="w-full h-full flex items-center justify-center max-h-[640px] ">    
+        <div class="flex flex-row justify-center m-auto w-full h-full items-center ">
+            <div id="intro" class="flex flex-col px-5 md:p-5 md:w-max w-full h-full  lg:gap-5 items-center justify-center lg:items-start lg:justify-start">
+                <div class="flex flex-col gap-5 md:gap-3 w-full h-full  text-wrap md:text-nowrap justify-center items-center md:items-start">
+                    <h1 class="font-dosis text-center lg:text-justify w-full tracking-normal font-bold text-negroTitulos text-4xl xl:text-5xl">¡Desarrollo web a tu estilo!</h1>
+                    <p class="font-nunito text-base font-medium">Transformamos tus ideas en sitios web excepcionales</p>
+                    <button class="flex w-full max-w-sm md:max-w-36 rounded-lg justify-center items-center text-white text-base font-medium p-2 bg-negroTitulos">
+                        Descubre más
+                    </button>                    
+                </div>
+                <div class="flex flex-col items-center lg:justify-start lg:items-start h-full gap-8">
+                    <p class="font-medium font-nunito w-full max-w-sm text-base">
+                        Descubre cómo creamos software y sitios web que impulsan tu éxito. En <span class="font-russo">Hands OnCode</span>, convertimos tus ideas en soluciones innovadoras y efectivas. ¡Construyamos juntos el futuro digital que mereces!
+                    </p>
+                    <div class="flex flex-col md:flex-row w-full justify-center md:justify-start items-center md:items-start gap-3 md:gap-[2.604vw]">
+                        <button class="w-full max-w-sm h-full p-2 bg-azulSecundario rounded-lg inline-flex items-center justify-center gap-3 md:max-w-md font-nunito font-medium text-base text-white">
+                            <p class="flex items-center text-center">
+                                Contactanos
+                            </p> <svg class="size-5 lg:size-6" width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M24.3006 6.18951C23.0871 4.97549 21.6456 4.01347 20.0588 3.35882C18.4721 2.70418 16.7715 2.36984 15.0551 2.37506C7.85156 2.37506 1.9875 8.20983 1.98457 15.3829C1.98138 17.6669 2.58345 19.911 3.72949 21.8868L1.875 28.6251L8.80371 26.8163C10.7216 27.8553 12.8686 28.3991 15.0498 28.3983H15.0551C22.258 28.3983 28.1215 22.563 28.125 15.3905C28.1294 13.6799 27.7935 11.9855 27.1369 10.4059C26.4804 8.82628 25.5162 7.39303 24.3006 6.18951ZM15.0551 26.2028H15.0504C13.1059 26.2034 11.1967 25.683 9.52148 24.6958L9.1248 24.4614L5.01328 25.5348L6.11074 21.5452L5.85234 21.135C4.76507 19.4136 4.18901 17.4189 4.19121 15.3829C4.19121 9.42213 9.0668 4.57233 15.0592 4.57233C17.9338 4.56719 20.6927 5.70408 22.7292 7.73294C24.7656 9.7618 25.9128 12.5165 25.9184 15.3911C25.916 21.3524 21.0428 26.2028 15.0551 26.2028ZM21.0135 18.1057C20.6871 17.9428 19.0799 17.1565 18.7822 17.0481C18.4846 16.9397 18.2648 16.8852 18.0475 17.211C17.8301 17.5368 17.2037 18.2657 17.0133 18.4854C16.8229 18.7051 16.6324 18.7292 16.3061 18.5663C15.9797 18.4034 14.9268 18.0606 13.6793 16.9532C12.7084 16.0913 12.0533 15.0272 11.8629 14.702C11.6725 14.3768 11.8424 14.2004 12.0059 14.0387C12.1529 13.8928 12.3322 13.659 12.4957 13.4692C12.6592 13.2794 12.7137 13.1434 12.8221 12.9266C12.9305 12.7098 12.8766 12.52 12.7951 12.3577C12.7137 12.1954 12.0604 10.5952 11.7885 9.9442C11.523 9.31022 11.2541 9.39635 11.0537 9.38639C10.8633 9.37701 10.6436 9.37467 10.4273 9.37467C10.2621 9.37897 10.0994 9.4173 9.94962 9.48727C9.79981 9.55723 9.66603 9.65733 9.55664 9.78131C9.25723 10.1071 8.41348 10.8946 8.41348 12.493C8.41348 14.0915 9.58535 15.6383 9.74707 15.8551C9.90879 16.0719 12.0498 19.3549 15.3258 20.763C15.9341 21.0235 16.5557 21.2519 17.1879 21.4473C17.9701 21.6946 18.682 21.66 19.2445 21.5762C19.8721 21.4831 21.1781 20.7899 21.4494 20.0305C21.7207 19.2712 21.7213 18.6208 21.6398 18.4854C21.5584 18.3501 21.3404 18.268 21.0135 18.1057Z" fill="white"/>
+                            </svg>
+                            </button>
+                        <button class="w-full h-full max-w-sm p-2 bg-transparent border border-black rounded-lg md:max-w-md inline-flex items-center justify-center gap-3 font-nunito font-medium text-base text-negroTitulos">
+                            <p>
+                                Procedimiento
+                            </p>
+                            <svg class="size-5 lg:size-6" width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15.3879 20.1875L20.0391 15.5L15.3879 10.8125M19.3928 15.5H9.96094" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M15 26.75C21.2109 26.75 26.25 21.7109 26.25 15.5C26.25 9.28906 21.2109 4.25 15 4.25C8.78906 4.25 3.75 9.28906 3.75 15.5C3.75 21.7109 8.78906 26.75 15 26.75Z" stroke="black" stroke-width="2" stroke-miterlimit="10"/>
+                                </svg>
+                                
+                        </button>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div id="imagen-telefono" class="hidden md:flex h-max w-max justify-center items-center max-w-lg">
+                
+                <img src={ImgHome.src} class="h-full w-full flex items-center justify-center" alt="HandsOnCode-LandingPage">
+            </div>
+
+
+        </div>
+    </div>
+
+</section>
+
